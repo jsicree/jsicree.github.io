@@ -4,8 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a GitHub Pages personal homepage for Joe Sicree (`jsicree.github.io`). It is a static site with a single `index.html` file. There is no build system, framework, or dependencies.
+This is a GitHub Pages personal homepage for Joe Sicree (`jsicree.github.io`). It uses Jekyll for templating, processed automatically by GitHub Pages.
+
+## Structure
+
+- `index.html` — main page with Jekyll front matter and Liquid templating
+- `style.css` — stylesheet
+- `_config.yml` — Jekyll site configuration (title, description, url)
+- `_layouts/default.html` — base HTML layout template
 
 ## Deployment
 
-Changes pushed to the `master` branch are automatically deployed via GitHub Pages. There is no build step — the HTML is served directly.
+Changes pushed to the `master` branch are automatically deployed via GitHub Pages. GitHub Pages runs Jekyll automatically — there is no local build step required.
