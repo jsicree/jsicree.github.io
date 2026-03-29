@@ -1,0 +1,43 @@
+---
+layout: default
+title: AI Development
+---
+
+<h3>AI Development</h3>
+<p>
+  These projects explore building applications with the Claude API. They form a full-stack demo:
+  a Java/Spring Boot backend and a React frontend that together provide a working CRUD application
+  built with AI-assisted development.
+</p>
+
+<ul class="project-list">
+  <li>
+    <h4><a href="https://github.com/jsicree/claude-java-demo">claude-java-demo</a></h4>
+    <p>
+      A Spring Boot REST API built with a hexagonal (ports &amp; adapters) architecture. Manages
+      Products and Customers via full CRUD endpoints and exposes interactive API documentation
+      through Swagger UI. Uses MySQL in production and H2 for testing, with Docker Compose for
+      local orchestration.
+    </p>
+    <ul class="project-details">
+      <li>Java 17, Spring Boot, Spring Data JPA, Maven</li>
+      <li>Hexagonal architecture — domain layer has zero Spring coupling</li>
+      <li>49 tests across domain, application, controller, and persistence layers</li>
+      <li>Dockerized with multi-stage build and health checks</li>
+    </ul>
+  </li>
+  <li>
+    <h4><a href="https://github.com/jsicree/claude-react-demo">claude-react-demo</a></h4>
+    <p>
+      A React 18 single-page application that serves as the frontend for claude-java-demo.
+      Provides a tab-based interface for managing Products and Customers with create, list,
+      and delete operations. Communicates with the backend via a centralized REST API client.
+    </p>
+    <ul class="project-details">
+      <li>React 18, Vite, native fetch API</li>
+      <li>No external UI component libraries — hand-written CSS</li>
+      <li>Backend URL configurable at runtime via environment variable</li>
+      <li>Dockerized with multi-stage build served via nginx</li>
+    </ul>
+  </li>
+</ul>

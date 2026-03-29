@@ -11,7 +11,12 @@
         <div class="sidebar-title">{{ site.title }}</div>
         <ul>
           <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
-          <li><a href="{{ '/projects.html' | relative_url }}"{% if page.url contains 'projects' %} class="active"{% endif %}>Projects</a></li>
+          <li>
+            <a href="{{ '/projects.html' | relative_url }}"{% if page.url == '/projects.html' %} class="active"{% endif %}>Projects</a>
+            <ul class="subnav">
+              <li><a href="{{ '/projects/ai-development.html' | relative_url }}"{% if page.url contains 'ai-development' %} class="active"{% endif %}>AI Development</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <main class="content">
