@@ -9,7 +9,9 @@ A Jekyll-based personal homepage served via GitHub Pages. Jekyll is processed au
 ## Files
 
 - `index.html` — home page (Jekyll front matter + Liquid templating)
-- `projects.html` — projects page
+- `projects.html` — projects index page
+- `projects/ai-development.html` — AI Development subpage
+- `projects/miscellaneous.html` — Miscellaneous subpage
 - `style.css` — stylesheet
 - `_config.yml` — Jekyll site configuration
 - `_layouts/default.html` — base HTML layout template with left sidebar navigation

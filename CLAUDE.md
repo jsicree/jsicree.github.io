@@ -9,14 +9,16 @@ This is a GitHub Pages personal homepage for Joe Sicree (`jsicree.github.io`). I
 ## Structure
 
 - `index.html` — main page with Jekyll front matter and Liquid templating
-- `projects.html` — projects page listing personal/open source projects
-- `style.css` — stylesheet; includes sidebar layout, content area, and project list styles
+- `projects.html` — projects index page linking to project subpages
+- `projects/ai-development.html` — AI Development subpage (claude-java-demo, claude-react-demo)
+- `projects/miscellaneous.html` — Miscellaneous subpage (jsicree.github.io and other projects)
+- `style.css` — stylesheet; includes sidebar layout, content area, project list, and subnav styles
 - `_config.yml` — Jekyll site configuration (title, description, url)
 - `_layouts/default.html` — base HTML layout template with left sidebar navigation
 
 ## Navigation
 
-The sidebar is defined in `_layouts/default.html`. To add a new page, create the page file and add a corresponding `<li>` entry in the sidebar `<ul>`. The active link is highlighted using `page.url` comparisons in Liquid.
+The sidebar is defined in `_layouts/default.html`. Top-level nav items use `<li>` entries in the main `<ul>`; subpages use a nested `<ul class="subnav">`. To add a new page, create the file and add the appropriate `<li>` entry. Active links are highlighted using `page.url` comparisons in Liquid.
 
 ## Deployment
 
