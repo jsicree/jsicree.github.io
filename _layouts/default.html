@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
   </head>
   <body>
-    {{ content }}
+    <div class="site-wrapper">
+      <nav class="sidebar">
+        <div class="sidebar-title">{{ site.title }}</div>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
+          <li><a href="{{ '/projects.html' | relative_url }}"{% if page.url contains 'projects' %} class="active"{% endif %}>Projects</a></li>
+        </ul>
+      </nav>
+      <main class="content">
+        {{ content }}
+      </main>
+    </div>
   </body>
 </html>

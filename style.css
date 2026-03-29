@@ -1,12 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: 0;
   color: #333;
   line-height: 1.6;
 }
 
+.site-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 180px;
+  flex-shrink: 0;
+  background: #f4f4f4;
+  border-right: 1px solid #ddd;
+  padding: 1.5rem 1rem;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  color: #111;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #444;
+  display: block;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background: #e0e0e0;
+  color: #111;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 720px;
+}
+
 h3, h4 {
   color: #111;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  margin-bottom: 1.5rem;
+}
+
+.project-list h4 {
+  margin-bottom: 0.25rem;
+}
+
+.project-list h4 a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.project-list h4 a:hover {
+  text-decoration: underline;
+}
+
+.project-list p {
+  margin: 0;
+  color: #555;
 }
