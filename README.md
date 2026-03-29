@@ -8,10 +8,11 @@ A Jekyll-based personal homepage served via GitHub Pages. Jekyll is processed au
 
 ## Files
 
-- `index.html` — main page (Jekyll front matter + Liquid templating)
+- `index.html` — home page (Jekyll front matter + Liquid templating)
+- `projects.html` — projects page
 - `style.css` — stylesheet
 - `_config.yml` — Jekyll site configuration
-- `_layouts/default.html` — base HTML layout template
+- `_layouts/default.html` — base HTML layout template with left sidebar navigation
 
 ## Deployment
 
